@@ -8,10 +8,10 @@ Apart from all exists Vue language tools, you can also implement language toolin
 
 ### Vue tooling
 
-- Use Vue extension in my IDE
+- [Use Vue extension in my IDE](/vue/installation)
 - Vue project configure
 - Implement Vue extension for a IDE
-- Implement a VueLanguagePlugin
+- [Implement a VueLanguagePlugin](/vue/plugin)
 
 ### Volar framework
 
