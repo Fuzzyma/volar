@@ -3,12 +3,12 @@ layout: home
 
 hero:
   name: Volar
-  text: High-performance tooling for Vue
-  tagline: The recommended VSCode extension for Vue.js projects
+  text: Embedded Language Tooling Framework
+  tagline: Common tooling framework that provide first-class support for Vue.js
   actions:
     - theme: brand
       text: Get Started
-      link: /installation
+      link: /introduction
     - theme: alt
       text: View on GitHub
       link: https://github.com/johnsoncodehk/volar
@@ -24,6 +24,3 @@ features:
     title: Additional features
     details: Additional features like automatic imports, type checking at build time etc. are included out of the box
 ---
-
-
-

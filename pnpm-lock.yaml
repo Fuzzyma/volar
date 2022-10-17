@@ -13,19 +13,23 @@ importers:
       '@vscode/test-web': latest
       typescript: beta
       vite: latest
-      vitepress: 1.0.0-alpha.13
       vitest: latest
-      vue: ^3.2.40
     optionalDependencies:
       '@lerna-lite/cli': 1.12.0
       '@vscode/test-web': 0.0.31
-      vitepress: 1.0.0-alpha.13
-      vue: 3.2.40
     devDependencies:
       '@types/node': 18.8.0
       typescript: 4.9.1-beta
       vite: 3.1.8
       vitest: 0.24.3
+
+  docs:
+    specifiers:
+      vitepress: latest
+      vue: ^3.2.40
+    optionalDependencies:
+      vitepress: 1.0.0-alpha.21
+      vue: 3.2.40
 
   examples/svelte-language-core:
     specifiers:
@@ -683,7 +687,7 @@ packages:
     resolution: {integrity: sha512-H1PekEtSeS0msetR2YGGey2w7jQ2wAKfGODJvQTygSwMgUZ+2DHpzUgeDyEBIXRIfaBcoQneqrzsljM62pm6Xg==}
     dependencies:
       '@docsearch/react': 3.2.1
-      preact: 10.11.0
+      preact: 10.11.2
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
@@ -1376,8 +1380,8 @@ packages:
     resolution: {integrity: sha512-GH8BDf8cw9AC9080uneJfulhSa7KHSMI2s/CyKePXoGNos9J486w2V4YKoeNUqIEkW4hKoEAWp6/cXTwyGj47g==}
     dev: true
 
-  /@types/web-bluetooth/0.0.15:
-    resolution: {integrity: sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==}
+  /@types/web-bluetooth/0.0.16:
+    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
     dev: false
     optional: true
 
@@ -1387,8 +1391,8 @@ packages:
       '@types/node': 18.8.0
     dev: true
 
-  /@vitejs/plugin-vue/3.1.0_vite@3.1.8+vue@3.2.40:
-    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
+  /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.40:
+    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
@@ -1469,8 +1473,8 @@ packages:
       '@vue/compiler-dom': 3.2.40
       '@vue/shared': 3.2.40
 
-  /@vue/devtools-api/6.4.2:
-    resolution: {integrity: sha512-6hNZ23h1M2Llky+SIAmVhL7s6BjLtZBCzjIz9iRSBUsysjE7kC39ulW0dH4o/eZtycmSt4qEr6RDVGTIuWu+ow==}
+  /@vue/devtools-api/6.4.4:
+    resolution: {integrity: sha512-Ku31WzpOV/8cruFaXaEZKF81WkNnvCSlBY4eOGtz5WMSdJvX1v1WWlSMGZeqUwPtQ27ZZz7B62erEMq8JDjcXw==}
     dev: false
     optional: true
 
@@ -1513,12 +1517,12 @@ packages:
   /@vue/shared/3.2.40:
     resolution: {integrity: sha512-0PLQ6RUtZM0vO3teRfzGi4ltLUO5aO+kLgwh4Um3THSR03rpQWLTuRCkuO5A41ITzwdWeKdPHtSARuPkoo5pCQ==}
 
-  /@vueuse/core/9.3.0_vue@3.2.40:
-    resolution: {integrity: sha512-64Rna8IQDWpdrJxgitDg7yv1yTp41ZmvV8zlLEylK4QQLWAhz1OFGZDPZ8bU4lwcGgbEJ2sGi2jrdNh4LttUSQ==}
+  /@vueuse/core/9.3.1_vue@3.2.40:
+    resolution: {integrity: sha512-xriyD+v3D2ObH/UtnkEl+1sbcLBVHNaZaLi/rqoNEe/B92hggDEFQIGXoQUjdRzYOjASHSezf9uCDtmd7LeWyA==}
     dependencies:
-      '@types/web-bluetooth': 0.0.15
-      '@vueuse/metadata': 9.3.0
-      '@vueuse/shared': 9.3.0_vue@3.2.40
+      '@types/web-bluetooth': 0.0.16
+      '@vueuse/metadata': 9.3.1
+      '@vueuse/shared': 9.3.1_vue@3.2.40
       vue-demi: 0.13.11_vue@3.2.40
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -1526,13 +1530,13 @@ packages:
     dev: false
     optional: true
 
-  /@vueuse/metadata/9.3.0:
-    resolution: {integrity: sha512-GnnfjbzIPJIh9ngL9s9oGU1+Hx/h5/KFqTfJykzh/1xjaHkedV9g0MASpdmPZIP+ynNhKAcEfA6g5i8KXwtoMA==}
+  /@vueuse/metadata/9.3.1:
+    resolution: {integrity: sha512-G1BPhtx3OHaL/y4OZBofh6Xt02G1VA9PuOO8nac9sTKMkMqfyez5VfkF3D9GUjSRNO7cVWyH4rceeGXfr2wdMg==}
     dev: false
     optional: true
 
-  /@vueuse/shared/9.3.0_vue@3.2.40:
-    resolution: {integrity: sha512-caGUWLY0DpPC6l31KxeUy6vPVNA0yKxx81jFYLoMpyP6cF84FG5Dkf69DfSUqL57wX8JcUkJDMnQaQIZPWFEQQ==}
+  /@vueuse/shared/9.3.1_vue@3.2.40:
+    resolution: {integrity: sha512-YFu3qcnVeu0S2L4XdQJtBpDcjz6xwqHZtTv/XRhu66/yge1XVhxskUcc7VZbX52xF9A34V6KCfwncP9YDqYFiw==}
     dependencies:
       vue-demi: 0.13.11_vue@3.2.40
     transitivePeerDependencies:
@@ -5154,8 +5158,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /preact/10.11.0:
-    resolution: {integrity: sha512-Fk6+vB2kb6mSJfDgODq0YDhMfl0HNtK5+Uc9QqECO4nlyPAQwCI+BKyWO//idA7ikV7o+0Fm6LQmNuQi1wXI1w==}
+  /preact/10.11.2:
+    resolution: {integrity: sha512-skAwGDFmgxhq1DCBHke/9e12ewkhc7WYwjuhHB8HHS8zkdtITXLRmUMTeol2ldxvLwYtwbFeifZ9uDDWuyL4Iw==}
     dev: false
     optional: true
 
@@ -6330,16 +6334,16 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/1.0.0-alpha.13:
-    resolution: {integrity: sha512-gCbKb+6o0g5wHt2yyqBPk7FcvrB+MfwGtg1JMS5p99GTQR87l3b7symCl8o1ecv7MDXwJ2mPB8ZrYNLnQAJxLQ==}
+  /vitepress/1.0.0-alpha.21:
+    resolution: {integrity: sha512-D/tkoDW16uUZ9pnWd28Kk1vX26zNiTml3m9oGbfx2pAfYg99PHd1GceZyEm4jZsJU0+n9S++1ctFxoQvsq376A==}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@docsearch/css': 3.2.1
       '@docsearch/js': 3.2.1
-      '@vitejs/plugin-vue': 3.1.0_vite@3.1.8+vue@3.2.40
-      '@vue/devtools-api': 6.4.2
-      '@vueuse/core': 9.3.0_vue@3.2.40
+      '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.40
+      '@vue/devtools-api': 6.4.4
+      '@vueuse/core': 9.3.1_vue@3.2.40
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.11.1
       vite: 3.1.8
