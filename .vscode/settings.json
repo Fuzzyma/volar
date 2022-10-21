@@ -15,5 +15,10 @@
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"volar.vueserver.vitePress.processMdFile": true,
+	"tsconfig-helper.extraFileExtensions": [
+		"vue",
+		"md"
+	]
 }
