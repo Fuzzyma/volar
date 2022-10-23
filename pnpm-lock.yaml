@@ -9,10 +9,14 @@ importers:
       '@vscode/test-web': latest
       typescript: beta
       vite: latest
+      vitepress: 1.0.0-alpha.13
       vitest: latest
+      vue: ^3.2.40
     optionalDependencies:
       '@lerna-lite/cli': 1.12.0
       '@vscode/test-web': 0.0.32
+      vitepress: 1.0.0-alpha.13
+      vue: 3.2.40
     devDependencies:
       '@types/node': 18.11.3
       typescript: 4.9.1-beta
@@ -24,7 +28,7 @@ importers:
       vitepress: latest
       vue: ^3.2.40
     optionalDependencies:
-      vitepress: 1.0.0-alpha.21
+      vitepress: 1.0.0-alpha.22
       vue: 3.2.40
 
   examples/svelte-language-core:
@@ -1399,6 +1403,18 @@ packages:
       '@types/node': 18.8.0
     dev: true
 
+  /@vitejs/plugin-vue/3.1.0_vite@3.1.8+vue@3.2.40:
+    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    peerDependencies:
+      vite: ^3.0.0
+      vue: ^3.2.25
+    dependencies:
+      vite: 3.1.8
+      vue: 3.2.40
+    dev: false
+    optional: true
+
   /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.40:
     resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -1480,6 +1496,11 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.40
       '@vue/shared': 3.2.40
+
+  /@vue/devtools-api/6.4.2:
+    resolution: {integrity: sha512-6hNZ23h1M2Llky+SIAmVhL7s6BjLtZBCzjIz9iRSBUsysjE7kC39ulW0dH4o/eZtycmSt4qEr6RDVGTIuWu+ow==}
+    dev: false
+    optional: true
 
   /@vue/devtools-api/6.4.5:
     resolution: {integrity: sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==}
@@ -6343,8 +6364,35 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitepress/1.0.0-alpha.21:
-    resolution: {integrity: sha512-D/tkoDW16uUZ9pnWd28Kk1vX26zNiTml3m9oGbfx2pAfYg99PHd1GceZyEm4jZsJU0+n9S++1ctFxoQvsq376A==}
+  /vitepress/1.0.0-alpha.13:
+    resolution: {integrity: sha512-gCbKb+6o0g5wHt2yyqBPk7FcvrB+MfwGtg1JMS5p99GTQR87l3b7symCl8o1ecv7MDXwJ2mPB8ZrYNLnQAJxLQ==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@docsearch/css': 3.2.1
+      '@docsearch/js': 3.2.1
+      '@vitejs/plugin-vue': 3.1.0_vite@3.1.8+vue@3.2.40
+      '@vue/devtools-api': 6.4.2
+      '@vueuse/core': 9.3.0_vue@3.2.40
+      body-scroll-lock: 4.0.0-beta.0
+      shiki: 0.11.1
+      vite: 3.1.8
+      vue: 3.2.40
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - '@types/react'
+      - '@vue/composition-api'
+      - less
+      - react
+      - react-dom
+      - sass
+      - stylus
+      - terser
+    dev: false
+    optional: true
+
+  /vitepress/1.0.0-alpha.22:
+    resolution: {integrity: sha512-IWqnAxMDNaiyl6Bz+/79l40Ho6xsjrqxRp/WZw0+5BXR0BTZbmHyhGtI3XrH6oSn8MisLPjCccikaj3mcmCoWg==}
     hasBin: true
     requiresBuild: true
     dependencies:
